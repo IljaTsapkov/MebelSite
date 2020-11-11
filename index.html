@@ -17,20 +17,23 @@
 	terms[0]=Array();
 	terms[0][0]="Мебель Мастер";
 	terms[0][1]="Главная Страница";
+	terms[0][1]="Организация";			      
 
 	terms[1]=Array();
 	terms[1][0]="Mööblimeister";
 	terms[1][1]="Avaleht";
-
+	terms[1][2]="Organisatsioon";
 	
 	terms[2]=Array();
 	terms[2][0]="Furniture Master";
 	terms[2][1]="HomePage";
+	terms[2][2]="Organisation";
 
 
 	function tranSlate(n){
 		document.getElementById("mm").innerHTML=terms[n][0];
 		document.getElementById("gs").innerHTML=terms[n][1];
+		document.getElementById("or").innerHTML=terms[n][2];
 	}
 	</script>
 </head>
@@ -60,7 +63,7 @@
 				<a name="gs" id="gs" class="nav-link" href="https://iljatsapkov.github.io/MebelSite/index.html">Главная Страница</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="https://iljatsapkov.github.io/MebelSite/info1.html">Организация</a>
+				<a name="or" id="or" class="nav-link" href="https://iljatsapkov.github.io/MebelSite/info1.html">Организация</a>
 			</li>
 		</ul>
 		<ul class="navbar-nav mr-right">
