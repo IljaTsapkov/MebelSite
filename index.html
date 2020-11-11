@@ -4,11 +4,48 @@
 	<meta http-equiv="content-type" content="text/html"; charset=utf-8" />
 	<title>Мебель мастер</title>
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+		<style>
+		.flyMenu{position: fixed; top:0px; left:0px; height:40px; width:100%; z-index: 1000;}
+		.flyMenu div{background-color: rgba(255,255,255,0.8);}
+		.flyMenu div span{padding:10px 20px; cursor: pointer; display: inline-block;}
+		.flyMenu div span:hover{color:red;}
+		.firstRow{margin-top: 60px;}
+		
+	</style>
+	<script language="javascript">
+	terms=Array();
+	terms[0]=Array();
+	terms[0][0]="Мебель Мастер";
+	terms[0][1]="Главная Страница";
+
+	terms[1]=Array();
+	terms[1][0]="Mööblimeister";
+	terms[1][1]="Avaleht";
+
+	
+	terms[2]=Array();
+	terms[2][0]="Furniture Master";
+	terms[2][1]="HomePage";
+
+
+	function tranSlate(n){
+		document.getElementById("mm").innerHTML=terms[n][0];
+		document.getElementById("gs").innerHTML=terms[n][1];
+	}
+	</script>
 </head>
 	<body>
 	<div class="container">
+	<div class="row flyMenu">
+	<div class="col">
+	<span onClick="tranSlate(0)">По-русски</span>
+	<span  onClick="tranSlate(1)">Eesti keeles</span>
+	<span  onClick="tranSlate(2)">In English</span>
+		
+	</div>
+	</div>	
 	<!--// Начало всего сайта //-->
-	<div class="col-12">
+	<div style="margin-top: 60px;" class="col-12">
 	<nav class="navbar navbar-expand-lg">
 	<a class="navbar-brand" href="#"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
